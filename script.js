@@ -195,10 +195,10 @@ function submit(code) {
     historyDiv.appendChild(div);
     clear();
 
-    // If the game has been solved, celebrate victory!
-    if (remainingCodes.length == 1) {
+    	// If the game has been solved, celebrate victory!
+	if (matches(code, secret)) {
 		// Remove all dots from the secretDiv
-        while (secretDiv.firstChild) {secretDiv.removeChild(secretDiv.firstChild);}
+        	while (secretDiv.firstChild) {secretDiv.removeChild(secretDiv.firstChild);}
 
 		for (let i=0; i < code.length; i++) {
 			secretDiv.appendChild(makeDot(secret[i]));
