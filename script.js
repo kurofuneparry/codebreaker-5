@@ -229,7 +229,6 @@ function ai() {
 	}
 
 	// The code with the best minimum eliminations is submitted
-    console.log("Submitting with: " + guess + " " + best);
 	submit(guess);
 }
 
