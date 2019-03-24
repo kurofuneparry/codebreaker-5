@@ -22,7 +22,7 @@ span {
 }
 
 .empty {
-	box-shadow: 0px 0px 0px 2px gray;
+	box-shadow: 0px 0px 10px 2px gray inset;
 }
 
 .response {
